@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            blue: {
+              100: '#2747C5',
+              200: '#1F3E72'
+            },
+            gray: {
+              100: '#62708A'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+<!-- navbar -->
+<nav class="bg-white border-gray-200 py-5 rounded dark:bg-white">
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+  <a href="#" class="flex items-center">
+      <span class="self-center text-xl font-bold whitespace-nowrap text-blue-100">Vaccination</span>
+  </a>
+  <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
+    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+      <li>
+        <a href="#" class="block py-2 pr-6 pl-5 text-gray-100">Database</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-6 pl-5 text-gray-100">Education</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-6 pl-5 text-gray-100">News</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-6 pl-5 text-gray-100">Regulation</a>
+      </li>
+    </ul>
+    <button class="block ml-5 mr-6 bg-blue-100 p-4 pl-10 pr-10 text-white rounded-md shadow-xl">Hoax Buster</button>
+  </div>
+  </div>
+</nav>
+
+<section>
+  <div class="flex flex-row">
+    <div class="basis-1/2">
+      <div class="p-40 pt-10">
+        <div class="flex flex-col">
+          <h1 class="text-blue-200 font-bold text-7xl">Fight Virus</h1>
+          <h1 class="text-blue-200 font-bold text-7xl">With Vaccines</h1>
+        </div>
+        <div class="flex flex-col w-full mt-10">
+          <span class="text-gray-100 py-1 text-lg">Lets stop the pandemic by killing the virus</span>
+          <span class="text-gray-100 py-1 text-lg grow">with a vaccine, don't let yourself and your</span>
+          <span class="text-gray-100 py-1 text-lg">family get infected</span>
+        </div>
+        <div class="flex flex-row mt-6">
+          <div class="basis-1/2">
+            <span>Best protection</span>
+          </div>
+          <div class="basis-1/2">
+            <span>Selected vaccines</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="basis-1/2">
+      <img src="./assets/nurse.jpeg" height="400px">
+    </div>
+  </div>
+  <div class="absolute bottom-48 left-40 w-8/12">
+    <div>
+      <span>Scheduled your vaccinations</span>
+    </div>
+    <div>
+      <div class="block p-6 rounded-lg shadow-lg bg-white w-full flex flex-row opacity-90">
+        <div class="basis-1/4">
+          <div class="flex flex-col">
+            <span>Location</span>
+            <span>Jakarta Utara</span>
+          </div>
+        </div>
+        <div class="basis-1/4">
+          <div class="flex flex-col">
+            <span>Date</span>
+            <span>08 July 2021</span>
+          </div>
+        </div>        
+        <div class="basis-1/4">
+          <div class="flex flex-col">
+            <span>Vaccine Type</span>
+            <span>Moderna</span>
+          </div>
+        </div>
+        <div class="basis-1/4">
+          <button class="block ml-5 mr-6 bg-blue-100 p-4 pl-10 pr-10 text-white rounded-md shadow-xl">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
