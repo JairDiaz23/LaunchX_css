@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
     <script>
     tailwind.config = {
@@ -12,10 +13,14 @@
             clifford: '#da373d',
             blue: {
               100: '#2747C5',
-              200: '#1F3E72'
+              200: '#1F3E72',
+              700: '#DEE6FF'
             },
             gray: {
               100: '#62708A'
+            },
+            yellow: {
+              400: '#FFD52C'
             }
           }
         }
@@ -65,10 +70,10 @@
         </div>
         <div class="flex flex-row mt-6">
           <div class="basis-1/2">
-            <span>Best protection</span>
+            <span><i class="fa fa-shield text-yellow-400 bg-yellow-100 w-6 h-6 pt-1 text-center rounded-sm mr-3.5 shadow-lg" aria-hidden="true"></i>Best protection</span>
           </div>
           <div class="basis-1/2">
-            <span>Selected vaccines</span>
+            <span><i class="fa fa-star text-yellow-200 bg-yellow-100 w-6 h-6 pt-1 text-center rounded-sm mr-3.5 shadow-lg" aria-hidden="true"></i> Selected vaccines</span>
           </div>
         </div>
       </div>
@@ -79,26 +84,26 @@
   </div>
   <div class="absolute bottom-48 left-40 w-8/12">
     <div>
-      <span>Scheduled your vaccinations</span>
+      <span><i class="fa fa-clock-o text-blue-200 bg-blue-700 w-6 h-6 pt-1 text-center rounded-sm mr-3.5 shadow-lg" aria-hidden="true"></i>Scheduled your vaccinations</span>
     </div>
     <div>
       <div class="block p-6 rounded-lg shadow-lg bg-white w-full flex flex-row opacity-90">
         <div class="basis-1/4">
           <div class="flex flex-col">
-            <span>Location</span>
-            <span>Jakarta Utara</span>
+            <span><i class="fa fa-map-marker text-blue-200 bg-blue-700 w-6 h-6 pt-1 text-center rounded-sm mr-3.5 shadow-lg" aria-hidden="true"></i>Location</span>
+            <span class="pl-10">Jakarta Utara</span>
           </div>
         </div>
         <div class="basis-1/4">
           <div class="flex flex-col">
-            <span>Date</span>
-            <span>08 July 2021</span>
+            <span><i class="fa fa-calendar text-blue-200 bg-blue-700 w-6 h-6 pt-1 text-center rounded-sm mr-3.5 shadow-lg" aria-hidden="true"></i>Date</span>
+            <span class="pl-10">08 July 2021</span>
           </div>
         </div>        
         <div class="basis-1/4">
           <div class="flex flex-col">
-            <span>Vaccine Type</span>
-            <span>Moderna</span>
+            <span><i class="fa fa-pencil text-blue-200 bg-blue-700 w-6 h-6 pt-1 text-center rounded-sm mr-3.5 shadow-lg" aria-hidden="true"></i>Vaccine Type</span>
+            <span class="pl-10">Moderna</span>
           </div>
         </div>
         <div class="basis-1/4">
@@ -108,6 +113,129 @@
     </div>
   </div>
 </section>
+
+<!-- images  -->
+<section>
+  <div class="flex flex-wrap pt-24 px-40">
+    <div class="basis-1/4">
+        <img src="./assets/pfizer.jpeg">
+    </div>
+    <div class="basis-1/4">
+      <img src="./assets/moderna.jpeg">
+    </div>
+    <div class="basis-1/4">
+      <img src="./assets/aztraseneca.jpeg">
+    </div>
+    <div class="basis-1/4">
+      <img src="./assets/sinovac.jpeg">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="flex flex-row">
+    <div class="basis-1/2 pl-40 pt-20">
+      <h1 class="text-blue-200 font-bold text-6xl">Why should I vaccine?</h1>
+      <div class="flex flex-col pt-6">
+        <span class="text-gray-100 py-1 text-lg">In orden to avoid any doubts about getting the COVID-19</span>
+        <span class="text-gray-100 py-1 text-lg">vaccine, identify the following 4 benefits of COVID-19</span>
+        <span class="text-gray-100 py-1 text-lg">vaccination:</span>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row px-40 py-16">
+    <div class="basis-1/4 pr-3">
+        <div>
+          <div>
+            <div class="block p-6 rounded-lg shadow-lg bg-white w-full flex flex-col rounded px-6 py-12 h-96">
+              <div class="bg-blue-700 w-16 rounded pl-2 pb-2">
+                <i class="fa fa-sliders text-blue-200 bg-blue-700 w-6 h-6 pt-1 mr-3.5 text-5xl" aria-hidden="true"></i>
+              </div>
+              <div class="flex flex-col py-6">
+                <h4 class="text-2xl text-blue-200">Minimize the</h4>
+                <h4 class="text-2xl text-blue-200">spread of viruses</h4>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-gray-100 text-lg">Vaccine has been proven</span>
+                <span class="text-gray-100 text-lg">effective to prevent someone</span>
+                <span class="text-gray-100 text-lg">from getting infected with</span>
+                <span class="text-gray-100 text-lg">Coronavirus</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <div class="basis-1/4 px-3">
+        <div>
+          <div>
+            <div class="block p-6 rounded-lg shadow-lg bg-white w-full flex flex-col rounded px-6 py-12 h-96">
+              <div class="bg-blue-700 w-16 rounded pl-2 pb-2">
+                <i class="fa fa-shield text-blue-200 bg-blue-700 w-6 h-6 pt-1 mr-3.5 text-5xl" aria-hidden="true"></i>
+              </div>
+              <div class="flex flex-col py-6">
+                <h4 class="text-2xl text-blue-200">Forming</h4>
+                <h4 class="text-2xl text-blue-200">antibodies</h4>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-gray-100 text-lg">COVID-19 vaccine proven to</span>
+                <span class="text-gray-100 text-lg">help shape antibody</span>
+                <span class="text-gray-100 text-lg">response for inmune system</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="basis-1/4 px-3">
+        <div>
+          <div>
+            <div class="block p-6 rounded-lg shadow-lg bg-white w-full flex flex-col rounded px-6 py-12 h-96">
+              <div class="bg-blue-700 w-16 rounded pl-2 pb-2">
+                <i class="fa fa-users text-blue-200 bg-blue-700 w-6 h-6 pt-1 mr-3.5 text-5xl" aria-hidden="true"></i>
+              </div>
+              <div class="flex flex-col py-6">
+                <h4 class="text-2xl text-blue-200">Protecting</h4>
+                <h4 class="text-2xl text-blue-200">people nearby</h4>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-gray-100 text-lg">The benefits of COVID-19</span>
+                <span class="text-gray-100 text-lg">vaccination are the vaccine</span>
+                <span class="text-gray-100 text-lg">that we get can also help</span>
+                <span class="text-gray-100 text-lg">protect people around us</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="basis-1/4 pl-3">
+    <div>
+      <div>
+        <div class="block p-6 rounded-lg shadow-lg bg-white w-full flex flex-col rounded px-6 py-12 h-96">
+          <div class="bg-blue-700 w-16 rounded pl-2 pb-2">
+            <i class="fa fa-comments text-blue-200 bg-blue-700 w-6 h-6 pt-1 mr-3.5 text-5xl" aria-hidden="true"></i>
+          </div>
+          <div class="flex flex-col py-6">
+            <h4 class="text-2xl text-blue-200">Creating group</h4>
+            <h4 class="text-2xl text-blue-200">immunity</h4>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-gray-100 text-lg">COVID-19 vaccination is also</span>
+            <span class="text-gray-100 text-lg">beneficial for creating group</span>
+            <span class="text-gray-100 text-lg">immunity or herd immunity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+  </div>
+</section>
+
+
+
+
 
 
 </body>
