@@ -236,9 +236,8 @@
 
 <section>
   <div class="flex flex-row">
-    <div class="basis-1/2 pl-40 pt-20">
-      <h1>Left elements</h1>
-
+    <div class="basis-1/2 pt-56 scale-y-150">
+      <img src="./assets/nurse2.jpeg">
     </div>
     <div class="basis-1/2 pt-20">
       <!-- Title -->
@@ -252,36 +251,192 @@
       </div>
 
       <!-- Collapsable cards -->
-      <div class="pt-10">
+      <div class="pt-10 w-2/3">
 
         <!-- First card -->
-        <div x-data={show:false}>
-
-          <!-- TODO: Aqui vamos -->
-          <p class="flex">
-<div class="block rounded-lg shadow-lg bg-white w-full flex flex-row rounded px-6 py-6">
-  <div class="bg-blue-700 w-16 rounded pl-2 pb-2">
-    <i class="fa fa-users text-blue-200 bg-blue-700 w-6 h-6 pt-1 mr-3.5 text-2xl" aria-hidden="true"></i>
-  </div>
-  <div>
-    <h6>Avoid alcoholic beverages</h6>
-  </div>
-  <div>
-    <i class="fa fa-arrow-circle-o-down text-blue-200 bg-blue-700 w-6 h-6 pt-1 mr-3.5 text-2xl cursor-pointer" aria-hidden="true" x-on:click.prevent="show=!show"></i>
-  </div>
-</div>
-<div x-show="show" class="border px-4 py-3 my-2 text-gray-700">
-  This is an example of tailwind css collapse with alpine js and tailwindcss. This collapse is toggle by either the above button or a href anochor tags.
-</div>
-          </p> 
-
-
+        <div x-data={show:false} class="my-6 hover:shadow-xl hover:-translate-y-1">
+            <div class="block rounded-lg shadow-lg bg-white flex flex-row rounded px-6 py-6">
+              <div class="flex flex-col w-full">
+                <div class="flex flex-row w-full">
+                  <!-- icon -->
+                  <div class="shadow-xl w-10 bg-blue-700 text-center">
+                      <i class="fa fa-shield text-center text-blue-200 w-1/2 text-xl basis-1/12 text-center" aria-hidden="true"></i>
+                  </div>
+                  <!-- text -->
+                    <h6 class="basis-10/12 text-blue-200 font-medium text-lg pl-3">Avoid alcoholic beverages</h6>
+                  <!-- close/open arrow -->
+                    <div class="shadow-xl w-10 bg-blue-700 text-center">
+                      <i class="fa fa-arrow-circle-o-down text-blue-200 text-xl cursor-pointer basis-1/12 text-center" aria-hidden="true" x-on:click.prevent="show=!show"></i>
+                    </div>
+                </div>
+                <div x-show="show" class="flex px-4 py-3 sm:px-0 my-2 text-gray-700">
+                  <span class="md:basis-9/12 sm:basis-full md:ml-14 sm:ml-0 text-gray-100">
+                  This is an example of tailwind css collapse with alpine js and tailwindcss. This collapse is toggle by either the above button or a href anochor tags.
+                  </span>
+                </div>
+              </div> 
+            </div>
         </div>
+
+        <!-- Second card -->
+        <div x-data={show:true} class="my-6 hover:shadow-xl hover:-translate-y-1">
+            <div class="block rounded-lg shadow-lg bg-white flex flex-row rounded px-6 py-6">
+              <div class="flex flex-col w-full">
+                <div class="flex flex-row w-full">
+                  <!-- icon -->
+                  <div class="shadow-xl w-10 bg-blue-700 text-center">
+                      <i class="fa fa-times text-center text-blue-200 w-1/2 text-xl basis-1/12 text-center" aria-hidden="true"></i>
+                  </div>
+                  <!-- text -->
+                    <h6 class="basis-10/12 text-blue-200 font-medium text-lg pl-3">Avoid stress</h6>
+                  <!-- close/open arrow -->
+                    <div class="shadow-xl w-10 bg-blue-700 text-center">
+                      <i class="fa fa-arrow-circle-o-down text-blue-200 text-xl cursor-pointer basis-1/12 text-center" aria-hidden="true" x-on:click.prevent="show=!show"></i>
+                    </div>
+                </div>
+                <div x-show="show" class="flex flex-col px-4 py-3 sm:px-0 my-2 text-gray-700">
+                  <span class="md:basis-9/12 sm:basis-full md:ml-14 sm:ml-0 text-gray-100">
+                    Stress has a profound effect on inmune work.
+                  </span>
+                  <span class="md:basis-9/12 sm:basis-full md:ml-14 sm:ml-0 text-gray-100">
+                    Moreover, prolonged stress can increase cortisol
+                  </span>
+                  <span class="md:basis-9/12 sm:basis-full md:ml-14 sm:ml-0 text-gray-100">
+                    production and oxidative stress in the body.
+                  </span>
+                </div>
+              </div> 
+            </div>
+        </div>
+
+        <!-- Third card -->
+        <div x-data={show:false} class="my-6 hover:shadow-xl hover:-translate-y-1">
+            <div class="block rounded-lg shadow-lg bg-white flex flex-row rounded px-6 py-6">
+              <div class="flex flex-col w-full">
+                <div class="flex flex-row w-full">
+                  <!-- icon -->
+                  <div class="shadow-xl w-10 bg-blue-700 text-center">
+                      <i class="fa fa-bar-chart text-center text-blue-200 w-1/2 text-xl basis-1/12 text-center" aria-hidden="true"></i>
+                  </div>
+                  <!-- text -->
+                    <h6 class="basis-10/12 text-blue-200 font-medium text-lg pl-3">Eat healty food</h6>
+                  <!-- close/open arrow -->
+                    <div class="shadow-xl w-10 bg-blue-700 text-center">
+                      <i class="fa fa-arrow-circle-o-down text-blue-200 text-xl cursor-pointer basis-1/12 text-center" aria-hidden="true" x-on:click.prevent="show=!show"></i>
+                    </div>
+                </div>
+                <div x-show="show" class="flex px-4 py-3 sm:px-0 my-2 text-gray-700">
+                  <span class="md:basis-9/12 sm:basis-full md:ml-14 sm:ml-0 text-gray-100">
+                  This is an example of tailwind css collapse with alpine js and tailwindcss. This collapse is toggle by either the above button or a href anochor tags.
+                  </span>
+                </div>
+              </div> 
+            </div>
+        </div>
+
+        <!-- Forth card -->
+        <div x-data={show:false} class="my-6 hover:shadow-xl hover:-translate-y-1">
+            <div class="block rounded-lg shadow-lg bg-white flex flex-row rounded px-6 py-6">
+              <div class="flex flex-col w-full">
+                <div class="flex flex-row w-full">
+                  <!-- icon -->
+                  <div class="shadow-xl w-10 bg-blue-700 text-center">
+                      <i class="fa fa-check text-center text-blue-200 w-1/2 text-xl basis-1/12 text-center" aria-hidden="true"></i>
+                  </div>
+                  <!-- text -->
+                    <h6 class="basis-10/12 text-blue-200 font-medium text-lg pl-3">Get enough sleep</h6>
+                  <!-- close/open arrow -->
+                    <div class="shadow-xl w-10 bg-blue-700 text-center">
+                      <i class="fa fa-arrow-circle-o-down text-blue-200 text-xl cursor-pointer basis-1/12 text-center" aria-hidden="true" x-on:click.prevent="show=!show"></i>
+                    </div>
+                </div>
+                <div x-show="show" class="flex px-4 py-3 sm:px-0 my-2 text-gray-700">
+                  <span class="md:basis-9/12 sm:basis-full md:ml-14 sm:ml-0 text-gray-100">
+                  This is an example of tailwind css collapse with alpine js and tailwindcss. This collapse is toggle by either the above button or a href anochor tags.
+                  </span>
+                </div>
+              </div> 
+            </div>
+        </div>
+
+        <!-- Fifth card -->
+        <div x-data={show:false} class="my-6 hover:shadow-xl hover:-translate-y-1">
+            <div class="block rounded-lg shadow-lg bg-white flex flex-row rounded px-6 py-6">
+              <div class="flex flex-col w-full">
+                <div class="flex flex-row w-full">
+                  <!-- icon -->
+                  <div class="shadow-xl w-10 bg-blue-700 text-center">
+                      <i class="fa fa-heart text-center text-blue-200 w-1/2 text-xl basis-1/12 text-center" aria-hidden="true"></i>
+                  </div>
+                  <!-- text -->
+                    <h6 class="basis-10/12 text-blue-200 font-medium text-lg pl-3">Exercise or physical activity</h6>
+                  <!-- close/open arrow -->
+                    <div class="shadow-xl w-10 bg-blue-700 text-center">
+                      <i class="fa fa-arrow-circle-o-down text-blue-200 text-xl cursor-pointer basis-1/12 text-center" aria-hidden="true" x-on:click.prevent="show=!show"></i>
+                    </div>
+                </div>
+                <div x-show="show" class="flex px-4 py-3 sm:px-0 my-2 text-gray-700">
+                  <span class="md:basis-9/12 sm:basis-full md:ml-14 sm:ml-0 text-gray-100">
+                  This is an example of tailwind css collapse with alpine js and tailwindcss. This collapse is toggle by either the above button or a href anochor tags.
+                  </span>
+                </div>
+              </div> 
+            </div>
+        </div>
+
+
       </div>
     </div>
   </div>
 </section>
 
+
+<section class="pl-40 pt-20">
+  <div class="flex flex-row">
+    <div class="basis-1/2">
+      <div class="flex flex-col">
+        <h1 class="text-blue-200 font-bold text-5xl">Emergency contact</h1>
+        <!-- Description -->
+        <div class="pt-10 flex flex-col">
+           <span class="text-gray-100 py-1 text-lg">Contact one of the contacts below if you or your family feel</span>
+            <span class="text-gray-100 py-1 text-lg">unwell and have similar symptoms such as Covid-19, make</span>
+           <span class="text-gray-100 py-1 text-lg">sure you also take care of yourself before reporting to us ;</span>
+        </div>
+
+        <div class="flex flex-row pt-20">
+          <div class="basis-1/2">
+            <div class="hover:shadow-xl hover:-translate-y-1">
+              <div class="block rounded-lg shadow-lg bg-white flex flex-row rounded p-6">
+                <div class="flex flex-col w-full">
+                  <!-- First row  (icon, titulo, subtitle) -->
+                  <div class="flex flex-row w-full">
+                    <!-- icon -->
+                    <div class="shadow-xl w-10 bg-blue-700 text-center">
+                        <i class="fa fa-heart text-center text-blue-200 w-1/2 text-xl basis-1/12 text-center" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h4>Chat</h4>
+                        <span>021.123.145.14</span>
+                    </div>
+                  </div>
+                  <!-- Second row (button) -->
+                  <button>Chat now</button>
+                </div> 
+              </div>
+            </div>
+          </div>
+            <div class="basis-1/2">
+            recuadro 2
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="basis-1/2">
+      
+    </div>
+  </div>
+</section>
 
 
 
