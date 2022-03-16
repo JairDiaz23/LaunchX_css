@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script>
     tailwind.config = {
       theme: {
@@ -230,6 +231,54 @@
     </div>
 </div>
 
+  </div>
+</section>
+
+<section>
+  <div class="flex flex-row">
+    <div class="basis-1/2 pl-40 pt-20">
+      <h1>Left elements</h1>
+
+    </div>
+    <div class="basis-1/2 pt-20">
+      <!-- Title -->
+      <h1 class="text-blue-200 font-bold text-5xl">Preparations Before Vaccine</h1>
+      <!-- Description -->
+      <div class="pt-10 flex flex-col">
+         <span class="text-gray-100 py-1 text-lg">The success of vaccines is strongly influenced by the</span>
+          <span class="text-gray-100 py-1 text-lg">strength of the body's immune system. Therefore, there are</span>
+         <span class="text-gray-100 py-1 text-lg">several things that can be tried to make the COVID-19</span>
+         <span class="text-gray-100 py-1 text-lg">vaccine work:</span>
+      </div>
+
+      <!-- Collapsable cards -->
+      <div class="pt-10">
+
+        <!-- First card -->
+        <div x-data={show:false}>
+
+          <!-- TODO: Aqui vamos -->
+          <p class="flex">
+<div class="block rounded-lg shadow-lg bg-white w-full flex flex-row rounded px-6 py-6">
+  <div class="bg-blue-700 w-16 rounded pl-2 pb-2">
+    <i class="fa fa-users text-blue-200 bg-blue-700 w-6 h-6 pt-1 mr-3.5 text-2xl" aria-hidden="true"></i>
+  </div>
+  <div>
+    <h6>Avoid alcoholic beverages</h6>
+  </div>
+  <div>
+    <i class="fa fa-arrow-circle-o-down text-blue-200 bg-blue-700 w-6 h-6 pt-1 mr-3.5 text-2xl cursor-pointer" aria-hidden="true" x-on:click.prevent="show=!show"></i>
+  </div>
+</div>
+<div x-show="show" class="border px-4 py-3 my-2 text-gray-700">
+  This is an example of tailwind css collapse with alpine js and tailwindcss. This collapse is toggle by either the above button or a href anochor tags.
+</div>
+          </p> 
+
+
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
