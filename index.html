@@ -17,6 +17,9 @@
               200: '#1F3E72',
               700: '#DEE6FF'
             },
+            white: {
+              100: '#FFFFFF'
+            },
             gray: {
               100: '#62708A'
             },
@@ -391,7 +394,7 @@
 </section>
 
 
-<section class="pl-40 pt-20">
+<section class="pl-40 py-20">
   <div class="flex flex-row">
     <div class="basis-1/2">
       <div class="flex flex-col">
@@ -405,41 +408,190 @@
 
         <div class="flex flex-row pt-20">
           <div class="basis-1/2">
+
+            <!-- Card upper left -->
             <div class="hover:shadow-xl hover:-translate-y-1">
-              <div class="block rounded-lg shadow-lg bg-white flex flex-row rounded p-6">
+              <div class="block rounded-lg shadow-lg bg-white flex flex-row rounded p-6 w-9/12">
                 <div class="flex flex-col w-full">
                   <!-- First row  (icon, titulo, subtitle) -->
-                  <div class="flex flex-row w-full">
+                  <div class="flex flex-row w-full pb-6">
                     <!-- icon -->
-                    <div class="shadow-xl w-10 bg-blue-700 text-center">
-                        <i class="fa fa-heart text-center text-blue-200 w-1/2 text-xl basis-1/12 text-center" aria-hidden="true"></i>
+                    <div class="shadow-xl p-2 bg-blue-700 text-center rounded mr-6">
+                        <i class="fa fa-phone text-center text-blue-200 text-xl basis-1/12 text-center" aria-hidden="true"></i>
                     </div>
                     <div class="flex flex-col">
-                        <h4>Chat</h4>
-                        <span>021.123.145.14</span>
+                        <h3 class="text-blue-200 text-1xl">Call</h3>
+                        <span class="text-sm text-gray-100">021.123.145.14</span>
                     </div>
                   </div>
                   <!-- Second row (button) -->
-                  <button>Chat now</button>
+                  <button class="transition ease-in-out bg-blue-700 h-12 rounded text-white-700
+                  hover:scale-110 hover:bg-blue-200 hover:text-white-100 hover:font-bold">Call now</button>
+                </div> 
+              </div>
+            </div>
+
+          </div>
+            <div class="basis-1/2">
+            
+            <!-- Card upper right -->
+            <div class="hover:shadow-xl hover:-translate-y-1">
+              <div class="block rounded-lg shadow-lg bg-white flex flex-row rounded p-6 w-9/12">
+                <div class="flex flex-col w-full">
+                  <!-- First row  (icon, titulo, subtitle) -->
+                  <div class="flex flex-row w-full pb-6">
+                    <!-- icon -->
+                    <div class="shadow-xl p-2 bg-blue-700 text-center rounded mr-6">
+                        <i class="fa fa-commenting text-center text-blue-200 text-xl basis-1/12 text-center" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-blue-200 text-1xl">Chat</h3>
+                        <span class="text-sm text-gray-100">021.123.145.14</span>
+                    </div>
+                  </div>
+                  <!-- Second row (button) -->
+                  <button class="transition ease-in-out bg-blue-700 h-12 rounded text-white-700
+                  hover:scale-110 hover:bg-blue-200 hover:text-white-100 hover:font-bold">Chat now</button>
+                </div> 
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="flex flex-row pt-16">
+          <div class="basis-1/2">
+
+            <!-- Card upper left -->
+            <div class="hover:shadow-xl hover:-translate-y-1">
+              <div class="block rounded-lg shadow-lg bg-white flex flex-row rounded p-6 w-9/12">
+                <div class="flex flex-col w-full">
+                  <!-- First row  (icon, titulo, subtitle) -->
+                  <div class="flex flex-row w-full pb-6">
+                    <!-- icon -->
+                    <div class="shadow-xl p-2 bg-blue-700 text-center rounded mr-6">
+                        <i class="fa fa-video-camera text-center text-blue-200 text-xl basis-1/12 text-center" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-blue-200 text-1xl">Video call</h3>
+                        <span class="text-sm text-gray-100">021.123.145.14</span>
+                    </div>
+                  </div>
+                  <!-- Second row (button) -->
+                  <button class="transition ease-in-out bg-blue-700 h-12 rounded text-white-700
+                  hover:scale-110 hover:bg-blue-200 hover:text-white-100 hover:font-bold">Video call now</button>
+                </div> 
+              </div>
+            </div>
+
+          </div>
+            <div class="basis-1/2">
+            
+            <!-- Card upper right -->
+            <div class="hover:shadow-xl hover:-translate-y-1">
+              <div class="block rounded-lg shadow-lg bg-white flex flex-row rounded p-6 w-9/12">
+                <div class="flex flex-col w-full">
+                  <!-- First row  (icon, titulo, subtitle) -->
+                  <div class="flex flex-row w-full pb-6">
+                    <!-- icon -->
+                    <div class="shadow-xl p-2 bg-blue-700 text-center rounded mr-6">
+                        <i class="fa fa-envelope-o text-center text-blue-200 text-xl basis-1/12 text-center" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-blue-200 text-1xl">Message</h3>
+                        <span class="text-sm text-gray-100">021.123.145.14</span>
+                    </div>
+                  </div>
+                  <!-- Second row (button) -->
+                  <button class="transition ease-in-out bg-blue-700 h-12 rounded text-white-700
+                  hover:scale-110 hover:bg-blue-200 hover:text-white-100 hover:font-bold">Message now</button>
                 </div> 
               </div>
             </div>
           </div>
-            <div class="basis-1/2">
-            recuadro 2
-          </div>
         </div>
-
       </div>
     </div>
     <div class="basis-1/2">
-      
+      <img src="./assets/nurse3.jpeg">
     </div>
   </div>
 </section>
 
 
+<footer class="text-center lg:text-left bg-blue-700 text-gray-600">
+  <div class="mx-6 py-10 text-center md:text-left">
+    <div class="grid gap-8">
+      <div class="grid-col-4">
+        <h6 class="text-blue-200 font-bold text-2xl">
+          Vaccination
+        </h6>
+        <div class="flex flex-col text-gray-100">
+          <span>Our goal is to help the</span>
+          <span>world free from the</span>
+          <span>ongoing pandemic</span>
+        </div>
+      </div>
+      <div class="grid-col-2">
+        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          Products
+        </h6>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Angular</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">React</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Vue</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">Laravel</a>
+        </p>
+      </div>
+      <div class="grid-col-2">
+        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          Useful links
+        </h6>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Pricing</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Settings</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Orders</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">Help</a>
+        </p>
+      </div>
 
+      <div class="grid-col-2">
+        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          Useful links
+        </h6>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Pricing</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Settings</a>
+        </p>
+        <p class="mb-4">
+          <a href="#!" class="text-gray-600">Orders</a>
+        </p>
+        <p>
+          <a href="#!" class="text-gray-600">Help</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-6 bg-blue-700">
+    <span>© 2021 Copyright:</span>
+    <a class="text-gray-600 font-semibold" href="https://tailwind-elements.com/">Tailwind Elements</a>
+  </div>
+</footer>
 
 
 </body>
