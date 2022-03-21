@@ -54,7 +54,7 @@
         <a href="#" class="block py-2 pr-6 pl-5 text-gray-100">Regulation</a>
       </li>
     </ul>
-    <button class="block ml-5 mr-6 bg-blue-100 p-4 pl-10 pr-10 text-white rounded-md shadow-xl">Hoax Buster</button>
+    <button class="block ml-5 mr-6 bg-blue-100 p-4 pl-10 pr-10 text-white-100 font-bold rounded-md shadow-xl">Hoax Buster</button>
   </div>
   </div>
 </nav>
@@ -91,7 +91,7 @@
       <span><i class="fa fa-clock-o text-blue-200 bg-blue-700 w-6 h-6 pt-1 text-center rounded-sm mr-3.5 shadow-lg" aria-hidden="true"></i>Scheduled your vaccinations</span>
     </div>
     <div>
-      <div class="block p-6 rounded-lg shadow-lg bg-white w-full flex flex-row opacity-90">
+      <div class="block p-6 rounded-lg shadow-lg bg-white-100 w-full flex flex-row opacity-100">
         <div class="basis-1/4">
           <div class="flex flex-col">
             <span><i class="fa fa-map-marker text-blue-200 bg-blue-700 w-6 h-6 pt-1 text-center rounded-sm mr-3.5 shadow-lg" aria-hidden="true"></i>Location</span>
@@ -111,7 +111,7 @@
           </div>
         </div>
         <div class="basis-1/4">
-          <button class="block ml-5 mr-6 bg-blue-100 p-4 pl-10 pr-10 text-white rounded-md shadow-xl">Submit</button>
+          <button class="block ml-5 mr-6 bg-blue-100 p-4 pl-10 pr-10 text-white-100 rounded-md shadow-xl">Submit</button>
         </div>
       </div>
     </div>
@@ -121,17 +121,17 @@
 <!-- images  -->
 <section>
   <div class="flex flex-wrap pt-24 px-40">
-    <div class="basis-1/4">
-        <img src="./assets/pfizer.jpeg">
-    </div>
-    <div class="basis-1/4">
-      <img src="./assets/moderna.jpeg">
-    </div>
-    <div class="basis-1/4">
+    <div class="basis-1/4 px-9">
       <img src="./assets/aztraseneca.jpeg">
     </div>
-    <div class="basis-1/4">
+    <div class="basis-1/4 px-9">
       <img src="./assets/sinovac.jpeg">
+    </div>
+    <div class="basis-1/4 px-9">
+        <img src="./assets/pfizer.jpeg">
+    </div>
+    <div class="basis-1/4 px-9">
+      <img src="./assets/moderna.jpeg">
     </div>
   </div>
 </section>
@@ -239,14 +239,14 @@
 
 <section>
   <div class="flex flex-row">
-    <div class="basis-1/2 pt-56 scale-y-150">
+    <div class="basis-1/2 mt-96 scale-y-110">
       <img src="./assets/nurse2.jpeg">
     </div>
     <div class="basis-1/2 pt-20">
       <!-- Title -->
       <h1 class="text-blue-200 font-bold text-5xl">Preparations Before Vaccine</h1>
       <!-- Description -->
-      <div class="pt-10 flex flex-col">
+      <div class="pt-6 flex flex-col">
          <span class="text-gray-100 py-1 text-lg">The success of vaccines is strongly influenced by the</span>
           <span class="text-gray-100 py-1 text-lg">strength of the body's immune system. Therefore, there are</span>
          <span class="text-gray-100 py-1 text-lg">several things that can be tried to make the COVID-19</span>
@@ -513,83 +513,77 @@
         </div>
       </div>
     </div>
-    <div class="basis-1/2">
+    <div class="basis-1/2 mt-52">
       <img src="./assets/nurse3.jpeg">
     </div>
   </div>
 </section>
 
 
-<footer class="text-center lg:text-left bg-blue-700 text-gray-600">
+<footer class="text-center lg:text-left bg-blue-700 text-gray-600 py-3">
   <div class="mx-6 py-10 text-center md:text-left">
-    <div class="grid gap-8">
-      <div class="grid-col-4">
-        <h6 class="text-blue-200 font-bold text-2xl">
+    <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+      <div class="col-span-3 pl-20">
+        <h6 class="text-blue-100 font-bold text-2xl">
           Vaccination
         </h6>
-        <div class="flex flex-col text-gray-100">
-          <span>Our goal is to help the</span>
-          <span>world free from the</span>
-          <span>ongoing pandemic</span>
+        <div class="flex flex-col text-gray-100 pt-6">
+          <span class="text-gray-100 py-1">Our goal is to help the</span>
+          <span class="text-gray-100 py-1">world free from the</span>
+          <span class="text-gray-100 py-1">ongoing pandemic</span>
         </div>
       </div>
-      <div class="grid-col-2">
+      <div class="">
         <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-          Products
+          About
         </h6>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Angular</a>
+          <a href="#!" class="text-gray-100">About Us</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">React</a>
+          <a href="#!" class="text-gray-100">Features</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Vue</a>
-        </p>
-        <p>
-          <a href="#!" class="text-gray-600">Laravel</a>
+          <a href="#!" class="text-gray-100">News & Blog</a>
         </p>
       </div>
-      <div class="grid-col-2">
-        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-          Useful links
+      <div class="">
+        <h6 class="font-semibold mb-4 flex justify-center md:justify-start text-blue-200 text-xl">
+          Company
         </h6>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Pricing</a>
+          <a href="#!" class="text-gray-100">How We Work?</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Settings</a>
+          <a href="#!" class="text-gray-100">Capital</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Orders</a>
-        </p>
-        <p>
-          <a href="#!" class="text-gray-600">Help</a>
+          <a href="#!" class="text-gray-100">Security</a>
         </p>
       </div>
 
-      <div class="grid-col-2">
+      <div class="">
         <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-          Useful links
+          Support
         </h6>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Pricing</a>
+          <a href="#!" class="text-gray-100">FAQs</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Settings</a>
+          <a href="#!" class="text-gray-100">Support Center</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Orders</a>
-        </p>
-        <p>
-          <a href="#!" class="text-gray-600">Help</a>
+          <a href="#!" class="text-gray-100">Contact Us</a>
         </p>
       </div>
     </div>
   </div>
-  <div class="text-center p-6 bg-blue-700">
-    <span>© 2021 Copyright:</span>
-    <a class="text-gray-600 font-semibold" href="https://tailwind-elements.com/">Tailwind Elements</a>
+  <div class="grid grid-cols-3 gap-2 pl-24">
+    <span class="text-gray-100 col-span-2">© 2021 Vaccination. All rights reserved:</span>
+    <div class="text-gray-100 grid grid-cols-2 gap-2">
+      <a href="https://tailwind-elements.com/">Terms & Agreements</a>
+      <a href="https://tailwind-elements.com/">Privacy policy</a>
+    </div>
   </div>
 </footer>
 
